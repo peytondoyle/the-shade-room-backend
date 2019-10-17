@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_143418) do
   create_table "dragqueens", force: :cascade do |t|
     t.string "name"
     t.boolean "winner"
-    t.integer "place"
+    t.string "place"
     t.boolean "misscongeniality"
     t.integer "season"
     t.string "quote"
