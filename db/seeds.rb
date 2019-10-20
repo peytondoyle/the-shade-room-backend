@@ -48,8 +48,71 @@ queensapi_array.each do |queen|
  )
 end
 
-# FIX SASHA & SHEA
-# FIX ALL OF S11
+# UPDATING INCORRECT PLACEMENTS OF QUEENS
+# THERE IS NO S10 2nd PLACE (should be Eureka)
+
+sasha = Dragqueen.find_by(name: "Sasha Velour")
+sasha.update(:place => 0)
+
+shea = Dragqueen.find_by(name: "Shea Coulee")
+shea.update(:place => 12)
+
+aquaria = Dragqueen.find_by(name: "Aquaria")
+aquaria.update(:place => 0)
+
+miz = Dragqueen.find_by(name: "Miz Cracker")
+miz.update(:place => 10)
+
+yuhua = Dragqueen.find_by(name: "Yuhua Hamasaki")
+yuhua.update(:place => 3, :image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/c/c5/YuhuaS10.jpg/revision/latest/scale-to-width-down/1000?cb=20180223052431")
+
+dusty = Dragqueen.find_by(name: "Dusty Rae Bottoms")
+dusty.update(:place => 4)
+
+monet = Dragqueen.find_by(name: "Monet X Change")
+monet.update(:place => 9)
+
+asia = Dragqueen.find_by(name: "Asia O'Hara")
+asia.update(:place => 11)
+
+blair = Dragqueen.find_by(name: "Blair St. Clair")
+blair.update(:place => 6)
+
+kalorie = Dragqueen.find_by(name: "Kalorie Karbdashian Williams")
+kalorie.update(:place => 2)
+
+kameron = Dragqueen.find_by(name: "Kameron Michaels")
+kameron.update(:place => 12)
+
+mayhem = Dragqueen.find_by(name: "Mayhem Miller")
+mayhem.update(:place => 5)
+
+monique = Dragqueen.find_by(name: "Monique Heart")
+monique.update(:place => 7)
+
+vanjie = Dragqueen.find_by(name: "Vanessa Vanjie Mateo")
+vanjie.update(:place => 1)
+
+vixen = Dragqueen.find_by(name: "The Vixen")
+vixen.update(:place => 8)
+
+# UPDATING UNFORTUNATE IMAGES
+
+Dragqueen.find_by(name: "Tempest DuJour").update(:image => "https://i.ibb.co/6DLfBR6/Tempest-Du-Jour.png")
+Dragqueen.find_by(name: "Sasha Belle").update(:image => "https://i.ibb.co/5jK8vcQ/Sasha-Belle.png")
+Dragqueen.find_by(name: "Jasmine Masters").update(:image => "https://i.ibb.co/RzBHG0Q/Jasmine-Masters.png")
+Dragqueen.find_by(name: "Mrs. Kasha Davis").update(:image => "https://i.ibb.co/FWzkjM9/Mrs-Kasha-Davis.png")
+Dragqueen.find_by(name: "Kandy Ho").update(:image => "https://i.ibb.co/k1pLB46/KandyHo.png")
+Dragqueen.find_by(name: "Max").update(:image => "https://i.ibb.co/Tb02ncy/Max.png")
+Dragqueen.find_by(name: "Jaidynn Diore Fierce").update(:image => "https://i.ibb.co/k9rN2mY/Jaidynn-Diore-Fierce.png")
+Dragqueen.find_by(name: "Miss Fame").update(:image => "https://i.ibb.co/chwF5mN/MissFame.png")
+Dragqueen.find_by(name: "Trixie Mattel").update(:image => "https://i.ibb.co/mcHkXrC/Trixie-Mattel.png")
+Dragqueen.find_by(name: "Katya Zamolodchikova").update(:image => "https://i.ibb.co/s273TsQ/Katya.png")
+Dragqueen.find_by(name: "Kennedy Davenport").update(:image => "https://i.ibb.co/S6579mx/Kennedy-Davenport.png")
+Dragqueen.find_by(name: "Pearl").update(:image => "https://i.ibb.co/sJnVbzd/Pearl.png")
+Dragqueen.find_by(name: "Ginger Minj").update(:image => "https://i.ibb.co/PT7Ryhp/Ginger-Minj.png")
+Dragqueen.find_by(name: "Violet Chachki").update(:image => "https://i.ibb.co/WyFnTkJ/Violet-Chachki.png")
+
 
 Dragqueen.all.each do |queen|
 
