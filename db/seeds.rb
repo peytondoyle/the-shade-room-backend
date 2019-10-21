@@ -113,6 +113,11 @@ Dragqueen.find_by(name: "Pearl").update(:image => "https://i.ibb.co/sJnVbzd/Pear
 Dragqueen.find_by(name: "Ginger Minj").update(:image => "https://i.ibb.co/PT7Ryhp/Ginger-Minj.png")
 Dragqueen.find_by(name: "Violet Chachki").update(:image => "https://i.ibb.co/WyFnTkJ/Violet-Chachki.png")
 
+# CHANGING ALLSTARS WINNERS TO LOSERS
+Dragqueen.find_by(name: "Trixie Mattel").update(:winner => false)
+Dragqueen.find_by(name: "Alaska Thunderfuck 5000").update(:winner => false)
+Dragqueen.find_by(name: "Chad Michaels").update(:winner => false)
+
 
 Dragqueen.all.each do |queen|
 
