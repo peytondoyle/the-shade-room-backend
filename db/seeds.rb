@@ -161,9 +161,9 @@ end
 # Dragqueen.destroy_all
 # dela = Dragqueen.create(name: "Ben De La Creme", winner: false, place: 5, misscongeniality: true, season: 6, quote: "test test test", image: "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/9/93/DelaS6promo.jpg/revision/latest/scale-to-width-down/350?cb=20161216100811")
 
-##FAKE USERS
-# User.destroy_all
-# peyton = User.create(name: "Peyton Doyle")
+#FAKE USERS
+User.destroy_all
+peyton = User.create(name: "Peyton Doyle")
 
 ##FAKE RATINGS
 # Rating.destroy_all
