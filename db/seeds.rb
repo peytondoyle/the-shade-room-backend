@@ -162,16 +162,16 @@ end
 # dela = Dragqueen.create(name: "Ben De La Creme", winner: false, place: 5, misscongeniality: true, season: 6, quote: "test test test", image: "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/9/93/DelaS6promo.jpg/revision/latest/scale-to-width-down/350?cb=20161216100811")
 
 #FAKE USERS
-User.destroy_all
-peyton = User.create(name: "Peyton Doyle")
+# User.destroy_all
+# peyton = User.create(name: "Peyton Doyle")
 
 ##FAKE RATINGS
 # Rating.destroy_all
-rating1 = Rating.create(rating: 4, user_id: 5, dragqueen_id: 6723)
-rating1 = Rating.create(rating: 3, user_id: 6, dragqueen_id: 6723)
-rating1 = Rating.create(rating: 1, user_id: 7, dragqueen_id: 6723)
-rating1 = Rating.create(rating: 5, user_id: 8, dragqueen_id: 6723)
-rating1 = Rating.create(rating: 2, user_id: 9, dragqueen_id: 6723)
+# rating1 = Rating.create(rating: 4, user_id: 5, dragqueen_id: 6723)
+# rating1 = Rating.create(rating: 3, user_id: 6, dragqueen_id: 6723)
+# rating1 = Rating.create(rating: 1, user_id: 7, dragqueen_id: 6723)
+# rating1 = Rating.create(rating: 5, user_id: 8, dragqueen_id: 6723)
+# rating1 = Rating.create(rating: 2, user_id: 9, dragqueen_id: 6723)
 
 ##FAKE COMMENTS
 # Comment.destroy_all
