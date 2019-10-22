@@ -5,8 +5,19 @@ class RatingsController < ActionController::API
     render json: rating
   end
 
+  def show
+    rating = Rating.find(params[:id])
+    render json: rating
+  end
+
   def index
       render({json: Rating.all})
+  end
+
+  def ratingsByUser
+    user = User.find(params[:id])
+    rating = Rating.where(user_id: user)
+    render json: rating
   end
 
   private
