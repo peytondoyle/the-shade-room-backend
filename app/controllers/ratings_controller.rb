@@ -15,6 +15,7 @@ class RatingsController < ActionController::API
   end
 
   def update
+    byebug
     rating = Rating.find(params[:id])
     editRating = rating.update(rating_params)
     render json: editRating
