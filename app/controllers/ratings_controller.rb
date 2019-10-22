@@ -1,6 +1,7 @@
 class RatingsController < ActionController::API
 
   def create
+    # byebug
     rating = Rating.create(rating_params)
     render json: rating
   end
@@ -15,10 +16,11 @@ class RatingsController < ActionController::API
   end
 
   def update
-    byebug
-    rating = Rating.find(params[:id])
-    editRating = rating.update(rating_params)
-    render json: editRating
+    # byebug
+    originalrating = Rating.find(params[:id])
+    editRating = originalrating.update(rating_params)
+    newrating = Rating.find(params[:id])
+    render json: newrating
   end
 
   def ratingsByUser
@@ -27,10 +29,16 @@ class RatingsController < ActionController::API
     render json: rating
   end
 
+  def getAllQueenRatings
+    queen = Dragqueen.find(params[:id])
+    rating = Rating.where(dragqueen_id: queen)
+    render json: rating
+  end
+
   private
 
   def rating_params
-    params.permit(:rating, :user_id, :dragqueen_id)
+    params.permit(:rating, :user_id, :dragqueen_id, :id)
   end
 
 
