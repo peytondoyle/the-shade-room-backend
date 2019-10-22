@@ -167,7 +167,11 @@ peyton = User.create(name: "Peyton Doyle")
 
 ##FAKE RATINGS
 # Rating.destroy_all
-# rating1 = Rating.create(rating: 4, user_id: peyton.id, dragqueen_id: dela.id)
+rating1 = Rating.create(rating: 4, user_id: 5, dragqueen_id: 6723)
+rating1 = Rating.create(rating: 3, user_id: 6, dragqueen_id: 6723)
+rating1 = Rating.create(rating: 1, user_id: 7, dragqueen_id: 6723)
+rating1 = Rating.create(rating: 5, user_id: 8, dragqueen_id: 6723)
+rating1 = Rating.create(rating: 2, user_id: 9, dragqueen_id: 6723)
 
 ##FAKE COMMENTS
 # Comment.destroy_all
