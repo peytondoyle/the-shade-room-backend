@@ -118,6 +118,19 @@ Dragqueen.find_by(name: "Trixie Mattel").update(:winner => false)
 Dragqueen.find_by(name: "Alaska Thunderfuck 5000").update(:winner => false)
 Dragqueen.find_by(name: "Chad Michaels").update(:winner => false)
 
+# UPDATING S8 IMAGES
+Dragqueen.find_by(name: "Bob the Drag Queen").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/0/0d/BobFullS8.jpg/revision/latest/scale-to-width-down/694?cb=20180622041118")
+Dragqueen.find_by(name: "Kim Chi").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/d/d8/KimS8.jpg/revision/latest?cb=20160202233309")
+Dragqueen.find_by(name: "Naomi Smalls").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/2/29/NaomiSmallsAS4.jpg/revision/latest/scale-to-width-down/666?cb=20190207032402")
+Dragqueen.find_by(name: "Chi Chi DeVayne").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/e/ef/ChiChiAS3.jpg/revision/latest/scale-to-width-down/666?cb=20171021011155")
+Dragqueen.find_by(name: "Derrick Barry").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/a/ac/DerrickS8.jpg/revision/latest?cb=20160202034245")
+Dragqueen.find_by(name: "Thorgy Thor").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/d/d4/ThorgyAS3.jpg/revision/latest/scale-to-width-down/666?cb=20171021010757")
+Dragqueen.find_by(name: "Robbie Turner").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/9/9d/RobbieS8.jpg/revision/latest?cb=20160202233003")
+Dragqueen.find_by(name: "Acid Betty").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/3/3e/AcidS8.jpg/revision/latest?cb=20160203000902")
+Dragqueen.find_by(name: "Naysha Lopez").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/2/23/NayshaS8.jpg/revision/latest?cb=20160203000147")
+Dragqueen.find_by(name: "Cynthia Lee Fontaine").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/3/34/CynthiaS9.jpg/revision/latest?cb=20170405002828")
+Dragqueen.find_by(name: "Dax ExclamationPoint").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/e/e2/DaxS8.jpg/revision/latest?cb=20160202235811")
+Dragqueen.find_by(name: "Laila McQueen").update(:image => "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/b/bb/LailaS8.jpg/revision/latest?cb=20160202232415")
 
 Dragqueen.all.each do |queen|
 
