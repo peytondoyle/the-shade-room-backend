@@ -148,7 +148,7 @@ Dragqueen.all.each do |queen|
   elsif ((queen.season == 2 || queen.season == 8) && (queen.place == "4")) || ((queen.season == 3 || queen.season == 4 || queen.season == 9) && (queen.place == "5")) || ((queen.season == 5 || queen.season == 6 || queen.season == 7 || queen.season == 10 || queen.season == 11) && (queen.place == "6"))
     new_place = "ninth"
   elsif ((queen.season == 1) && (queen.place == "2")) || (queen.season == 2 || queen.season == 8) && (queen.place == "5") || ((queen.season == 3 || queen.season == 4 || queen.season == 9) && (queen.place == "6")) || ((queen.season == 5 || queen.season == 6 || queen.season == 7 || queen.season == 10 || queen.season == 11) && queen.place == "7")
-    new_place = "eigth"
+    new_place = "eighth"
   elsif ((queen.season == 1) && (queen.place == "3")) || (queen.season == 2 || queen.season == 8) && (queen.place == "6") || ((queen.season == 3 || queen.season == 4 || queen.season == 9) && (queen.place == "7")) || ((queen.season == 5 || queen.season == 6 || queen.season == 7 || queen.season == 10 || queen.season == 11) && queen.place == "8")
     new_place = "seventh"
   elsif ((queen.season == 1) && (queen.place == "4")) || (queen.season == 2 || queen.season == 8) && (queen.place == "7") || ((queen.season == 3 || queen.season == 4 || queen.season == 9) && (queen.place == "8")) || ((queen.season == 5 || queen.season == 6 || queen.season == 7 || queen.season == 10 || queen.season == 11) && queen.place == "9")
